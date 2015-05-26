@@ -38,6 +38,7 @@ Options
 You may provide options to `Readability::Document.new`, including:
 
 * `:tags`: the base whitelist of tags to sanitize, defaults to `%w[div p]`;
+* `:tags_to_replace_with_whitespace`: the base list of tags to replace with whitespaces, defaults to `%w[br hr h1 h2 h3 h4 h5 h6 dl dd ol li ul address blockquote center]`;
 * `:remove_empty_nodes`: remove `<p>` tags that have no text content; also
   removes `<p>` tags that contain only images;
 * `:attributes`: whitelist of allowed attributes;
